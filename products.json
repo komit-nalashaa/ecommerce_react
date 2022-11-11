@@ -1,0 +1,29 @@
+[
+    {
+        Title: "This is mango"
+        Id: 1
+        Description: "This is mango from France"
+        Price: "Rs. 300/Kg."
+    },
+
+    {
+        Title: "This is Onange"
+        Id: 2
+        Description: "This is mango from France"
+        Price: "Rs. 300/Kg."
+    }, 
+
+    {
+        Title: "This is Apple"
+        Id: 3
+        Description: "This is mango from France"
+        Price: "Rs. 300/Kg."
+    }, 
+
+    {
+        Title: "This is Banana"
+        Id: 4
+        Description: "This is mango from France"
+        Price: "Rs. 300/Kg."
+    }
+]
