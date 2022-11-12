@@ -16,8 +16,7 @@ export function DetailPage() {
             <h6>MRP </h6>
             <h5>$105.00</h5>
         </div>
-        <div className="col-md-3">
-        </div>
+        <div className="col-md-3"> </div>
     </div>
     )
 }

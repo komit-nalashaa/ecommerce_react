@@ -1,7 +1,5 @@
 import React from "react";
-
 import AddCart from "./AddCart";
-
 
 export class AdditionPage extends React.Component {
     constructor() {
@@ -12,29 +10,23 @@ export class AdditionPage extends React.Component {
         };
     }
 
-
   IncrementItem = () => {
         this.setState({ clicks: this.state.clicks + 1 });
   }
-
   DecreaseItem = () => {
-      if (this.state.clicks < 0) { this.setState ({clicks: 0});
+      if (this.state.clicks < 1) { this.setState ({clicks: 0});
       console.log("Negative Value is not allowed")
-      window.alert("Negative Value is not allowed")
+      window.alert("Please Select at least one item.")
       }else {
         this.setState({clicks: this.state.clicks - 1 });
       }
-  
-    // this.setState({ clicks: this.state.clicks - 1 });
-  }
+    }
 
   ToggleClick = () => {
     this.setState({ show: !this.state.show });
   }
 
   render() {
-
-
         return(
           <div className="addition-button col-md-12">
               <div className="update_qty col-md-6 ">

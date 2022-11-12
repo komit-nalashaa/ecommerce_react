@@ -1,9 +1,7 @@
 import React from "react";
 import'./App.css';
-
 import { productData } from "./data";
 import { AdditionPage } from './Addition'
-
 
 export const Products = (props) => {
     const users=productData.map((data,id)=>{
@@ -11,7 +9,6 @@ export const Products = (props) => {
             <div className="card">
                 <div className="sellers"> Best Sellers </div>
                 <a href="product_details"><img src={data.img_url} /> </a>
-            
                 <div className="text-left">
                     <div className="font-11 col-md-12 color-green"><a> Organic</a></div>
                     <h6 className="font-12"> {data.Title}</h6>

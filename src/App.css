@@ -67,16 +67,16 @@
   border: 1px solid #ced4da;
 }
 
-
-
 .cart-icon {
   color: #69863c;
   list-style: none;
   padding-left: 30px;
 }
+
 .list-item {
   display:inline-flex ;
 }
+
 .list_items {
   text-align: right;
 }
@@ -94,8 +94,6 @@
   color: #ffffff;
 }
 
-
-
 .input-add {
   width: 36px;
   text-align: center;
@@ -107,9 +105,11 @@
   border: 1px solid gray;
   border-radius: 5px;
 }
+
 .addition-button {
   display: flex;
 }
+
 .text-right {
   text-align: right;
 }
