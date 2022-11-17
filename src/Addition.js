@@ -15,8 +15,7 @@ export class AdditionPage extends React.Component {
   }
   DecreaseItem = () => {
       if (this.state.clicks < 1) { this.setState ({clicks: 0});
-      console.log("Negative Value is not allowed")
-      window.alert("Please Select at least one item.")
+      window.alert("Negative Value is not allowed")
       }else {
         this.setState({clicks: this.state.clicks - 1 });
       }

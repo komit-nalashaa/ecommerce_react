@@ -18,19 +18,19 @@ export function Title() {
             <div className="col-md-6 list_items">
                 <ul className="list-item">
                     <li className="cart-icon">
-                        <a title="Login">
+                        <a className="loginanchor"title="Login" href="product_details">
                             <i className="fa fa-user-plus loginicon"></i>
                             <span> Log In</span>
                         </a>
                     </li>
                     <li className="cart-icon">
-                        <a title="Sign Up">
+                        <a title="Sign Up" href="/" className="loginanchor">
                             <i className="fa fa-user-plus loginicon"></i>
                             <span> Sign Up</span>
                         </a>
                     </li>
                     <li className="cart-icon">
-                        <a href= "cart_items" title="Cart">
+                        <a href= "cart_items" title="Cart" className="loginanchor">
                             <i className="fa fa-shopping-cart"></i>
                             <span className="dot">{value}</span>
                         </a>

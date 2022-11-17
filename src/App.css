@@ -68,9 +68,14 @@
 }
 
 .cart-icon {
-  color: #69863c;
+  color: #69863c; 
   list-style: none;
   padding-left: 30px;
+}
+
+.loginanchor{
+  color:  #69863c !important ;
+  text-decoration: none;
 }
 
 .list-item {
