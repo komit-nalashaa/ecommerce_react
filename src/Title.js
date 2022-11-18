@@ -1,14 +1,30 @@
 import React from "react";
 import './Addition'
-// import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { useDispatch, useSelector } from "react-redux";
-import { incrementcartAction } from "./redux/actions/counter.action";
+import { CartItems } from "./CartItems";
+import { NoCartItems } from "./NoCartItem";
+import { useNavigate } from 'react-router-dom';
 
 
 export function Title() {
+
     const dispatcher = useDispatch();
     const {value} = useSelector((state)=>(state.counterSlice));
+    const navigate = useNavigate();
 
+        const cartitemcount = (e) => {
+            e.preventDefault();
+            if(value===0){
+                return (
+                    navigate('/no_items')
+                )
+            } else {
+                return(
+                    navigate('/cart_items')
+                ) 
+            }
+        }
+     
     return (
         <div className="Title"> 
             <div className="col-md-6">
@@ -18,7 +34,7 @@ export function Title() {
             <div className="col-md-6 list_items">
                 <ul className="list-item">
                     <li className="cart-icon">
-                        <a className="loginanchor"title="Login" href="product_details">
+                        <a className="loginanchor"title="Login" href="product_details" >
                             <i className="fa fa-user-plus loginicon"></i>
                             <span> Log In</span>
                         </a>
@@ -30,12 +46,11 @@ export function Title() {
                         </a>
                     </li>
                     <li className="cart-icon">
-                        <a href= "cart_items" title="Cart" className="loginanchor">
+                        <a href= "cart_items" title="Cart" className="loginanchor" onClick={cartitemcount}>
                             <i className="fa fa-shopping-cart"></i>
-                            <span className="dot">{value}</span>
+                            <span className="dot" id="cartitemcount">{value}</span>
                         </a>
                     </li>
-                    
                 </ul>
             </div> 
 
@@ -44,3 +59,4 @@ export function Title() {
         </div>
     )
 }
+

@@ -8,6 +8,7 @@ import { SideBar } from './SideBar';
 import { render } from '@testing-library/react';
 import { ProductDetails } from './ProductDetails';
 import { CartItems } from './CartItems';
+import { NoCartItems } from './NoCartItem'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element = {<HomeScreen/>}/>
           <Route path="/product_details" element = {<ProductDetails/>}/>
           <Route path="/cart_items" element = {<CartItems/>}/>
+          <Route path="/no_items" element = {<NoCartItems/>}/>
         </Routes>
       </BrowserRouter>
     </>
